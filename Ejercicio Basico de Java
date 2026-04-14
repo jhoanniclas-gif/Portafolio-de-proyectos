@@ -1,0 +1,46 @@
+Mayor de tres números
+Representación visual (no-code)
+Inicio
+
+Entrada: Pedir número A
+
+Entrada: Pedir número B
+
+Entrada: Pedir número C
+
+Decisión: Comparar A, B y C
+
+Salida: Mostrar el mayor
+
+Fin
+
+Código en Java 
+import java.util.Scanner;
+
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        int a, b, c; // Tres números
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite el primer número:");
+        a = entrada.nextInt();
+
+        System.out.println("Digite el segundo número:");
+        b = entrada.nextInt();
+
+        System.out.println("Digite el tercer número:");
+        c = entrada.nextInt();
+
+        // Comparaciones con operadores relacionales
+        if (a >= b && a >= c) {
+            System.out.println("El mayor es: " + a);
+        } else if (b >= a && b >= c) {
+            System.out.println("El mayor es: " + b);
+        } else {
+            System.out.println("El mayor es: " + c);
+        }
+
+        entrada.close();
+    }
+}
